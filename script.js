@@ -96,7 +96,7 @@ function findUserLocation() {
       SSValue.innerHTML = sunsetLocal.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
 
       // Fetch UV Index from One Call API (free tier allows current data)
-      fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&exclude=minutely,hourly,daily,alerts&appid=60c936b804cef0fcb3510c8cf6788df8`)
+     fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&exclude=minutely,hourly,daily,alerts&appid=YOUR_API_KEY`)
         .then(response => response.json())
         .then(uvData => {
           if (uvData.current && uvData.current.uvi !== undefined) {
@@ -194,3 +194,4 @@ window.addEventListener('DOMContentLoaded', () => {
     findUserLocation();
   }
 });
+
