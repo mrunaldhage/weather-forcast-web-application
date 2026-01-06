@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-input {
+    width: 40%;
+    position: fixed;
+    inset: 0;
+    background: #78c1f3;
+    padding: 1rem 2.5rem;
+    overflow-y: auto;
+}
+
+.weatherIcon {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    display: block;
+    height: 150px;
+    width: 150px;
+    margin: 2rem auto;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.input-group input {
+    background: #f8f8f8;
+    text-transform: capitalize;
+    padding: 1rem;
+    font-size: 15px;
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.input-group .converter {
+    position: absolute;
+    right: 45px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.input-group .fa-search {
+    position: absolute;
+    right: 15px;
+    color: #909090;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.temperature {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.feelsLike {
+    font-size: 18px;
+    margin: 0.5rem 0;
+}
+
+.description {
+    font-size: 16px;
+    margin: 1rem 0;
+    text-transform: capitalize;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 1.5rem 0;
+}
+
+.date {
+    font-size: 15px;
+    margin: 0.8rem 0;
+}
+
+.city {
+    font-size: 18px;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.weather-output {
+    width: 60%;
+    position: fixed;
+    inset: 0;
+    margin-left: 40%;
+    padding: 2rem 3rem;
+    background: #f6f6f6;
+    overflow-y: auto;
+}
+
+.heading {
+    margin: 1.5rem 0 1rem 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.Highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Highlights > div {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #78c1f3;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.Highlights > div > p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.Highlights i {
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.Highlights h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.sun {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    padding: 1rem !important;
+}
+
+.sun-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.sun-item i {
+    font-size: 45px;
+    margin: 0;
+}
+
+.sun-item p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 2px 0;
+}
+
+.sun-item span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Forecast {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.forecast-item {
+    background: #78c1f3;
+    border-radius: 15px;
+    padding: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast-day {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.forecast-item img {
+    width: 70px;
+    height: 70px;
+    margin: 0.3rem 0;
+}
+
+.forecast-desc {
+    font-size: 13px;
+    color: #333;
+    font-style: italic;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+}
+
+.forecast-temp {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .Highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .Forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
