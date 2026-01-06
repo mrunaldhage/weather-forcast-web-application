@@ -32,10 +32,10 @@ https://mrunaldhage.github.io/weather-forcast-web-application/
 ## 📷 Screenshots
 
 ### Weather Overview
-![Weather Overview](screenshots/screenshot1.png)
+![Screenshot 1](screenshots/screenshot1.png)
 
 ### Today's Highlights
-![Today's Highlights](screenshots/screenshot2.png)
+![Screenshot 2](screenshots/screenshot2.png)
 
 ## Acknowledgement
 This project was built for learning purposes.
